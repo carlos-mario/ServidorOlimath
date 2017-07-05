@@ -7,6 +7,6 @@ namespace Modelo
 {
     public class Persistencia
     {
-        string t = "Hola";
+        
     }
 }
