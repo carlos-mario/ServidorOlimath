@@ -61,9 +61,57 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="PaginaPrincipal.Master" />
+    <Content Include="recursos\css\animate.css" />
+    <Content Include="recursos\css\bootstrap-datepicker.css" />
+    <Content Include="recursos\css\bootstrap.css" />
+    <Content Include="recursos\css\flexslider.css" />
+    <Content Include="recursos\css\form-elements.css" />
+    <Content Include="recursos\css\icomoon.css" />
+    <Content Include="recursos\css\magnific-popup.css" />
+    <Content Include="recursos\css\owl.carousel.min.css" />
+    <Content Include="recursos\css\owl.theme.default.min.css" />
+    <Content Include="recursos\css\pricing.css" />
+    <Content Include="recursos\css\style.css" />
+    <Content Include="recursos\css\styleform.css" />
+    <Content Include="recursos\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="recursos\fonts\icomoon\icomoon.svg" />
+    <Content Include="recursos\js\bootstrap-datepicker.js" />
+    <Content Include="recursos\js\bootstrap-datepicker.min.js" />
+    <Content Include="recursos\js\bootstrap.min.js" />
+    <Content Include="recursos\js\google_map.js" />
+    <Content Include="recursos\js\jquery-1.11.1.min.js" />
+    <Content Include="recursos\js\jquery.backstretch.min.js" />
+    <Content Include="recursos\js\jquery.countTo.js" />
+    <Content Include="recursos\js\jquery.easing.1.3.js" />
+    <Content Include="recursos\js\jquery.flexslider-min.js" />
+    <Content Include="recursos\js\jquery.magnific-popup.min.js" />
+    <Content Include="recursos\js\jquery.min.js" />
+    <Content Include="recursos\js\jquery.stellar.min.js" />
+    <Content Include="recursos\js\jquery.waypoints.min.js" />
+    <Content Include="recursos\js\magnific-popup-options.js" />
+    <Content Include="recursos\js\main.js" />
+    <Content Include="recursos\js\modernizr-2.6.2.min.js" />
+    <Content Include="recursos\js\owl.carousel.min.js" />
+    <Content Include="recursos\js\respond.min.js" />
+    <Content Include="recursos\js\retina-1.1.0.min.js" />
+    <Content Include="recursos\js\scripts.js" />
+    <Content Include="recursos\js\simplyCountdown.js" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="recursos\css\bootstrap.css.map" />
+    <Content Include="recursos\css\style.css.map" />
+    <Content Include="recursos\fonts\.DS_Store" />
+    <Content Include="recursos\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="recursos\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="recursos\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="recursos\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="recursos\fonts\icomoon\.DS_Store" />
+    <Content Include="recursos\fonts\icomoon\icomoon.eot" />
+    <Content Include="recursos\fonts\icomoon\icomoon.ttf" />
+    <Content Include="recursos\fonts\icomoon\icomoon.woff" />
+    <Content Include="recursos\js\.DS_Store" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,6 +123,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PaginaPrincipal.Master.cs">
       <DependentUpon>PaginaPrincipal.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -92,10 +147,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="recursos\css\" />
-    <Folder Include="recursos\fonts\" />
     <Folder Include="recursos\imagenes\" />
-    <Folder Include="recursos\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
