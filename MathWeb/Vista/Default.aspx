@@ -29,7 +29,8 @@
 	<%--<link rel="stylesheet" href="css/animate.css">--%>
     <link href="recursos/css/animate.css" rel="stylesheet" />
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<%--<link rel="stylesheet" href="css/icomoon.css">--%>
+    <link href="recursos/css/icomoon.css" rel="stylesheet" />
 	<!-- Bootstrap  -->
 	<%--<link rel="stylesheet" href="css/bootstrap.css">--%>
     <link href="recursos/css/bootstrap.css" rel="stylesheet" />
@@ -65,27 +66,11 @@
 	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
-		<!-- <div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right">
-						<p class="site">www.yourdomainname.com</p>
-						<p class="num">Call: +01 123 456 7890</p>
-						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div> -->
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-3">
-						<img class="img-responsive" src="images/logolimpiada.png">
+                        <img class="img-responsive" src="recursos/imagenes/logolimpiada.png" />
 					</div>
 					<div class="col-xs-9 text-right menu-1">
 						<ul>
@@ -101,7 +86,7 @@
 								</ul>
 							</li>
 							<li><a href="about.html">Acerca de</a></li>
-							<li class="btn-cta"><a href=""><span>Ingresar</span></a></li>
+							<li class="btn-cta"><a href="#"><span>Ingresar</span></a></li>
 							<!--<li class="btn-cta"><a href="#"><span>Create a Course</span></a></li>-->
 						</ul>
 					</div>
@@ -114,7 +99,7 @@
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		   	<li style="background-image: url(images/img_bg_1.jpg);">
+		   	<li style="background-image: url(recursos/imagenes/img_bg_1.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -128,7 +113,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_8.jpg);">
+		   	<li style="background-image: url(recursos/imagenes/img_bg_8.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -142,7 +127,7 @@
 			   		</div>
 		   		</div>
 		   	</li>
-		   	<li style="background-image: url(images/img_bg_2.jpg);">
+		   	<li style="background-image: url(recursos/imagenes/img_bg_2.jpg);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="row">
@@ -373,19 +358,24 @@
 	<%--<script src="js/jquery.waypoints.min.js"></script>--%>
     <script src="recursos/js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<%--<script src="js/jquery.stellar.min.js"></script>--%>
+    <script src="recursos/js/jquery.stellar.min.js"></script>
 	<!-- Carousel -->
 	<%--<script src="js/owl.carousel.min.js"></script>--%>
     <script src="recursos/js/owl.carousel.min.js"></script>
 	<!-- Flexslider -->
-	<script src="js/jquery.flexslider-min.js"></script>
+	<%--<script src="js/jquery.flexslider-min.js"></script>--%>
+    <script src="recursos/js/jquery.flexslider-min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<%--<script src="js/jquery.countTo.js"></script>--%>
+    <script src="recursos/js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<%--<script src="js/jquery.magnific-popup.min.js"></script>--%>
+    <script src="recursos/js/jquery.magnific-popup.min.js"></script>
+	<%--<script src="js/magnific-popup-options.js"></script>--%>
 	<!-- Count Down -->
-	<script src="js/simplyCountdown.js"></script>
+	<%--<script src="js/simplyCountdown.js"></script>--%>
+    <script src="recursos/js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<%--<script src="js/main.js"></script>--%>
     <script src="recursos/js/main.js"></script>
