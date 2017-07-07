@@ -80,7 +80,6 @@
     <Content Include="recursos\fonts\icomoon\icomoon.svg" />
     <Content Include="recursos\js\bootstrap-datepicker.js" />
     <Content Include="recursos\js\bootstrap-datepicker.min.js" />
-    <Content Include="recursos\js\bootstrap.min.js" />
     <Content Include="recursos\js\google_map.js" />
     <Content Include="recursos\js\jquery-1.11.1.min.js" />
     <Content Include="recursos\js\jquery.backstretch.min.js" />
