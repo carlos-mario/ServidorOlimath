@@ -73,8 +73,23 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgumentosMod.cs" />
+    <Compile Include="CentrosFormacionMod.cs" />
+    <Compile Include="CompetenciasMod.cs" />
+    <Compile Include="ComprasMod.cs" />
+    <Compile Include="ComprasTiendaMod.cs" />
+    <Compile Include="FichasFormacionMod.cs" />
+    <Compile Include="HistorialesMod.cs" />
+    <Compile Include="PerfilesMod.cs" />
     <Compile Include="Persistencia.cs" />
+    <Compile Include="PreguntasMod.cs" />
+    <Compile Include="ProgramasFormacionMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruebasTestMod.cs" />
+    <Compile Include="RankinsMod.cs" />
+    <Compile Include="RegionalesMod.cs" />
+    <Compile Include="RespuestasMod.cs" />
+    <Compile Include="TiendasMod.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
