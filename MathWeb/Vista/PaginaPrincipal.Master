@@ -126,7 +126,7 @@
         </div>
         <!-- Javascripts-->
         <script src="recursos/js/jquery-2.1.4.min.js"></script>
-        <script src="recursos/js/bootstrap.min.js"></script>
+        <script src="recursos/js/bootstrap min.js"></script>
         <script src="recursos/js/plugins/pace.min.js"></script>
         <script src="recursos/js/main2.js"></script>
     </form>
