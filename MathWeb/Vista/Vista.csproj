@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="FrmArgumentos.aspx" />
     <Content Include="FrmRegionales.aspx" />
     <Content Include="packages.config" />
     <Content Include="recursos\css\animate.css" />
@@ -187,6 +188,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArgumentos.aspx.cs">
+      <DependentUpon>FrmArgumentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmArgumentos.aspx.designer.cs">
+      <DependentUpon>FrmArgumentos.aspx</DependentUpon>
     </Compile>
     <Compile Include="FrmRegionales.aspx.cs">
       <DependentUpon>FrmRegionales.aspx</DependentUpon>
