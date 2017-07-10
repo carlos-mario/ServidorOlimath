@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Vista
 {
-    public partial class PaginaPrincipal : System.Web.UI.MasterPage
+    public partial class PaginaPrincipal2 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
