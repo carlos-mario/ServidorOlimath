@@ -50,7 +50,6 @@ namespace Vista
                         new Regionales(reader.GetInt32(0),
                                            reader.GetString(1),
                                            reader.GetString(2)));
-
                 }
                 p.cerrarConexion();
                 return lista.ToArray();
