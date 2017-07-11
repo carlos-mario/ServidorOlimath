@@ -64,6 +64,7 @@
     <Content Include="Default.aspx" />
     <Content Include="FrmArgumentos.aspx" />
     <Content Include="FrmRegionales.aspx" />
+    <Content Include="FrmTienda.aspx" />
     <Content Include="packages.config" />
     <Content Include="recursos\css\animate.css" />
     <Content Include="recursos\css\bootstrap-datepicker.css" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="FrmRegionales.aspx.designer.cs">
       <DependentUpon>FrmRegionales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTienda.aspx.cs">
+      <DependentUpon>FrmTienda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmTienda.aspx.designer.cs">
+      <DependentUpon>FrmTienda.aspx</DependentUpon>
     </Compile>
     <Compile Include="PaginaPrincipal2.Master.cs">
       <DependentUpon>PaginaPrincipal2.Master</DependentUpon>

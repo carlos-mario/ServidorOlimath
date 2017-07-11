@@ -12,25 +12,29 @@
                             <h4><b>Gestión de Regionales</b></h4>
                         </div>
                         <div class="panel-body">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"> Nuevo</i></button><br />
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"> Nuevo</i></button>
                             <br />
-
-                            <asp:GridView ID="gvMostrarRegionales" runat="server" CssClass="table table-striped"
-                                OnRowCancelingEdit="gvMostrarRegionales_RowCancelingEdit"
-                                OnRowDeleting="gvMostrarRegionales_RowDeleting"
-                                OnRowEditing="gvMostrarRegionales_RowEditing"
-                                OnRowUpdating="gvMostrarRegionales_RowUpdating"
-                                DataKeyNames="R_ID" OnPageIndexChanging="gvMostrarRegionales_PageIndexChanging"
-                                PageSize="5" AllowPaging="True">
-                                <Columns>
-                                    <asp:CommandField ShowEditButton="True" EditText="">
-                                        <ControlStyle CssClass="btn btn-info fa fa-pencil" />
-                                    </asp:CommandField>
-                                    <asp:CommandField ShowDeleteButton="True" DeleteText="">
-                                        <ControlStyle CssClass="btn btn-danger fa fa-trash" />
-                                    </asp:CommandField>
-                                </Columns>
-                            </asp:GridView>
+                            <br />
+                            <div class="row" style="overflow-x: scroll;">
+                                <div class="col-md-12">
+                                    <asp:GridView ID="gvMostrarRegionales" runat="server" CssClass="table table-striped"
+                                        OnRowCancelingEdit="gvMostrarRegionales_RowCancelingEdit"
+                                        OnRowDeleting="gvMostrarRegionales_RowDeleting"
+                                        OnRowEditing="gvMostrarRegionales_RowEditing"
+                                        OnRowUpdating="gvMostrarRegionales_RowUpdating"
+                                        DataKeyNames="R_ID" OnPageIndexChanging="gvMostrarRegionales_PageIndexChanging"
+                                        PageSize="5" AllowPaging="True">
+                                        <Columns>
+                                            <asp:CommandField ShowEditButton="True" EditText="">
+                                                <ControlStyle CssClass="btn btn-info fa fa-pencil" />
+                                            </asp:CommandField>
+                                            <asp:CommandField ShowDeleteButton="True" DeleteText="">
+                                                <ControlStyle CssClass="btn btn-danger fa fa-trash" />
+                                            </asp:CommandField>
+                                        </Columns>
+                                    </asp:GridView>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
