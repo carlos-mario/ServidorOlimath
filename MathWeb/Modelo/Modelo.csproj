@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="ArgumentosMod.cs" />
     <Compile Include="CentrosFormacionMod.cs" />
+    <Compile Include="Clases\Regionales.cs" />
     <Compile Include="CompetenciasMod.cs" />
     <Compile Include="ComprasMod.cs" />
     <Compile Include="ComprasTiendaMod.cs" />

@@ -34,7 +34,7 @@ namespace Vista
 
         public void limpiarCampos()
         {
-            txtIdReg.Text = "";
+            //txtIdReg.Text = "";
             txtCodigoReg.Text = "";
             txtNombreReg.Text = "";
         }
@@ -47,13 +47,13 @@ namespace Vista
 
             if (ejecuto)
             {
-                txtIdReg.Text = "Insertado correctamente!";
+                //txtIdReg.Text = "Insertado correctamente!";
                 mostrarRegionales();
                 limpiarCampos();
             }
             else
             {
-                txtIdReg.Text = "Elemento no insertado";
+                //txtIdReg.Text = "Elemento no insertado";
             }
         }
 

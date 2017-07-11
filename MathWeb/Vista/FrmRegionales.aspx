@@ -5,14 +5,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form runat="server">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" >
                 <div class="col-md-12">
                     <div class="panel panel-default"> 
                         <div class="panel-heading"><h4>Gestión de Regionales</h4></div> 
                         <div class="panel-body"> 
                              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"> Nuevo</i></button><br /><br />
                             
-                <asp:GridView ID="gvMostrarRegionales" runat="server" CssClass="table table-striped"
+                <asp:GridView ID="gvMostrarRegionales" runat="server" CssClass="table table-striped" style="overflow-x: scroll;"
                     OnRowCancelingEdit="gvMostrarRegionales_RowCancelingEdit"
                     OnRowDeleting="gvMostrarRegionales_RowDeleting"
                     OnRowEditing="gvMostrarRegionales_RowEditing"
@@ -30,6 +30,7 @@
                 </asp:GridView>
                         </div> 
         </div>
+                    
         </div>
             </div>
             <div class="row">   
@@ -47,7 +48,8 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <asp:Label ID="Label2" runat="server" Text="Código" CssClass="control-label"></asp:Label>
-                                            <asp:TextBox ID="txtCodigoReg" runat="server" CssClass="form-control"></asp:TextBox>
+                                            <asp:TextBox ID="txtCodigoReg" runat="server" CssClass="form-control">
+                                            </asp:TextBox><%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtCodigoReg">*</asp:RequiredFieldValidator>--%>
                                         </div>
                                         <div class="col-md-4">
                                             <asp:Label ID="Label3" runat="server" Text="Nombre" CssClass="control-label"></asp:Label>
