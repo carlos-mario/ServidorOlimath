@@ -108,9 +108,6 @@ namespace Vista
             }
             gvMostrarRegionales.EditIndex = -1;
             mostrarRegionales();
-            
-            gvMostrarRegionales.EditIndex = -1;
-            mostrarRegionales();
         }
 
         protected void gvMostrarRegionales_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)

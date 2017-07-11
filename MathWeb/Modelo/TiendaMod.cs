@@ -7,41 +7,41 @@ using System.Web;
 
 namespace Modelo
 {
-    public class ArgumentosMod
+    public class TiendaMod
     {
         Persistencia p = new Persistencia();
 
-        public DataSet mostrarArgumentos()
+        public DataSet mostrarTienda()
         {
             OracleDataAdapter objAdapter = new OracleDataAdapter();
             DataSet datos = new DataSet();
 
             OracleCommand objSelectCmd = new OracleCommand();
             objSelectCmd.Connection = p.abrirConexion();
-            objSelectCmd.CommandText = "GestionarArgumentos.mostrarArgumento";
+            objSelectCmd.CommandText = "GestionarTienda.mostrarTienda";
             objSelectCmd.CommandType = CommandType.StoredProcedure;
 
-            objSelectCmd.Parameters.Add("cur_argumentos", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
+            objSelectCmd.Parameters.Add("cur_tienda", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
             objAdapter.SelectCommand = objSelectCmd;
             objAdapter.Fill(datos);
             p.cerrarConexion();
             return datos;
         }
 
-        public bool insertarArgumento(string afirmacion, string evidencia, string justificacion, string rutaimagen, string rutavideo)
+        public bool insertarTienda(string codigo, string nombre, string imagen, int precio, string tipo)
         {
             bool ejecuto = false;
             int filas = 0;
-
+            
             OracleCommand objSelectCmd = new OracleCommand();
             objSelectCmd.Connection = p.abrirConexion();
-            objSelectCmd.CommandText = "GestionarArgumentos.insertarArgumento";
+            objSelectCmd.CommandText = "GestionarTienda.insertarTienda";
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("arg_afi", OracleDbType.Varchar2, 300).Value = afirmacion;
-            objSelectCmd.Parameters.Add("arg_evi", OracleDbType.Varchar2, 300).Value = evidencia;
-            objSelectCmd.Parameters.Add("arg_jus", OracleDbType.Varchar2, 300).Value = justificacion;
-            objSelectCmd.Parameters.Add("arg_rutima", OracleDbType.Varchar2, 100).Value = rutaimagen;
-            objSelectCmd.Parameters.Add("arg_rutvid", OracleDbType.Varchar2, 100).Value = rutavideo;
+            objSelectCmd.Parameters.Add("t_cod", OracleDbType.Varchar2, 12).Value = codigo;
+            objSelectCmd.Parameters.Add("t_nom", OracleDbType.Varchar2, 50).Value = nombre;
+            objSelectCmd.Parameters.Add("t_img", OracleDbType.Varchar2, 50).Value = imagen;
+            objSelectCmd.Parameters.Add("t_precio", OracleDbType.Int32).Value = precio;
+            objSelectCmd.Parameters.Add("t_tipo", OracleDbType.Varchar2, 50).Value = tipo;
 
             objSelectCmd.Parameters.Add("ejecuto", OracleDbType.Int16).Direction = ParameterDirection.Output; ;
 
@@ -62,21 +62,21 @@ namespace Modelo
             return ejecuto;
         }
 
-        public bool actualizarArgumento(int id, string afirmacion, string evidencia, string justificacion, string rutaimagen, string rutavideo)
+        public bool actualizarTienda(int id, string codigo, string nombre, string imagen, int precio, string tipo)
         {
             bool ejecuto = false;
             int filas = 0;
 
             OracleCommand objSelectCmd = new OracleCommand();
             objSelectCmd.Connection = p.abrirConexion();
-            objSelectCmd.CommandText = "GestionarArgumentos.actualizarArgumento";
+            objSelectCmd.CommandText = "GestionarTienda.actualizarTienda";
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("arg_ide", OracleDbType.Int16).Value = id;
-            objSelectCmd.Parameters.Add("arg_afi", OracleDbType.Varchar2, 300).Value = afirmacion;
-            objSelectCmd.Parameters.Add("arg_evi", OracleDbType.Varchar2, 300).Value = evidencia;
-            objSelectCmd.Parameters.Add("arg_jus", OracleDbType.Varchar2, 300).Value = justificacion;
-            objSelectCmd.Parameters.Add("arg_rutima", OracleDbType.Varchar2, 100).Value = rutaimagen;
-            objSelectCmd.Parameters.Add("arg_rutvid", OracleDbType.Varchar2, 100).Value = rutavideo;
+            objSelectCmd.Parameters.Add("t_ide", OracleDbType.Int16).Value = id;
+            objSelectCmd.Parameters.Add("t_cod", OracleDbType.Varchar2, 12).Value = codigo;
+            objSelectCmd.Parameters.Add("t_nom", OracleDbType.Varchar2, 50).Value = nombre;
+            objSelectCmd.Parameters.Add("t_img", OracleDbType.Varchar2, 50).Value = imagen;
+            objSelectCmd.Parameters.Add("t_precio", OracleDbType.Int32).Value = precio;
+            objSelectCmd.Parameters.Add("t_tipo", OracleDbType.Varchar2, 50).Value = tipo;
 
             objSelectCmd.Parameters.Add("ejecuto", OracleDbType.Int16).Direction = ParameterDirection.Output; ;
 
@@ -97,16 +97,16 @@ namespace Modelo
             return ejecuto;
         }
 
-        public bool eliminarArgumento(int id)
+        public bool eliminarTienda(int id)
         {
             bool ejecuto = false;
             int filas = 0;
 
             OracleCommand objSelectCmd = new OracleCommand();
             objSelectCmd.Connection = p.abrirConexion();
-            objSelectCmd.CommandText = "GestionarArgumentos.eliminarArgumento";
+            objSelectCmd.CommandText = "GestionarTienda.eliminarTienda";
             objSelectCmd.CommandType = CommandType.StoredProcedure;
-            objSelectCmd.Parameters.Add("arg_ide", OracleDbType.Int16).Value = id;
+            objSelectCmd.Parameters.Add("t_ide", OracleDbType.Int16).Value = id;
 
             objSelectCmd.Parameters.Add("ejecuto", OracleDbType.Int16).Direction = ParameterDirection.Output; ;
 

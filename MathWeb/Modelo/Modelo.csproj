@@ -90,7 +90,7 @@
     <Compile Include="RankinsMod.cs" />
     <Compile Include="RegionalesMod.cs" />
     <Compile Include="RespuestasMod.cs" />
-    <Compile Include="TiendasMod.cs" />
+    <Compile Include="TiendaMod.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
